@@ -27692,6 +27692,8 @@ paths:
               NextGame:
                 type: object
                 properties:
+                  creator:
+                    type: string
                   idValue:
                     type: string
                     format: uint64
@@ -27766,6 +27768,8 @@ paths:
                 items:
                   type: object
                   properties:
+                    creator:
+                      type: string
                     index:
                       type: string
                     game:
@@ -27893,6 +27897,8 @@ paths:
               storedGame:
                 type: object
                 properties:
+                  creator:
+                    type: string
                   index:
                     type: string
                   game:
@@ -47240,9 +47246,21 @@ definitions:
     description: >-
       QueryAppVersionResponse is the response type for the Query/AppVersion RPC
       method.
+  kiethuynh0904.checkers.checkers.MsgCreateGameResponse:
+    type: object
+    properties:
+      idValue:
+        type: string
+  kiethuynh0904.checkers.checkers.MsgPlayMoveResponse:
+    type: object
+    properties:
+      idValue:
+        type: string
   kiethuynh0904.checkers.checkers.NextGame:
     type: object
     properties:
+      creator:
+        type: string
       idValue:
         type: string
         format: uint64
@@ -47257,6 +47275,8 @@ definitions:
         items:
           type: object
           properties:
+            creator:
+              type: string
             index:
               type: string
             game:
@@ -47298,6 +47318,8 @@ definitions:
       NextGame:
         type: object
         properties:
+          creator:
+            type: string
           idValue:
             type: string
             format: uint64
@@ -47307,6 +47329,8 @@ definitions:
       storedGame:
         type: object
         properties:
+          creator:
+            type: string
           index:
             type: string
           game:
@@ -47327,6 +47351,8 @@ definitions:
   kiethuynh0904.checkers.checkers.StoredGame:
     type: object
     properties:
+      creator:
+        type: string
       index:
         type: string
       game:
