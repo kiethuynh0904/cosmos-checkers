@@ -3,7 +3,13 @@ package kiethuynh0904.checkers.checkers;
 
 option go_package = "github.com/kiethuynh0904/checkers/x/checkers/types";
 
-message NextGame {
+message StoredGame {
   string creator = 1;
-  uint64 idValue = 2; 
+  string index = 2; 
+  string game = 3; 
+  string turn = 4; 
+  string red = 5; 
+  string black = 6; 
+  
 }
+
